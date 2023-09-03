@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="main" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: darkred;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projektiknk.Controller.SignUpController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="143.0">
+         <image>
+            <Image url="@NBA.jpeg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="name" layoutX="244.0" layoutY="55.0" promptText="Enter your name" style="-fx-border-style: solid;" />
+      <TextField fx:id="surname" layoutX="244.0" layoutY="97.0" promptText="Enter your surname" style="-fx-border-style: solid;" />
+      <PasswordField fx:id="password" layoutX="244.0" layoutY="143.0" promptText="Enter your password" style="-fx-border-style: solid;" />
+      <PasswordField fx:id="confirm" layoutX="244.0" layoutY="187.0" promptText="Confirm your password" style="-fx-border-style: solid;" />
+      <DatePicker fx:id="Date" layoutX="230.0" layoutY="236.0" promptText="Pick your Birthday" style="-fx-border-style: solid;" />
+      <RadioButton fx:id="Male" layoutX="312.0" layoutY="292.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="76.0" style="-fx-background-color: white; -fx-border-style: solid;" text="Male" />
+      <RadioButton fx:id="Female" layoutX="442.0" layoutY="292.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="89.0" style="-fx-border-style: solid; -fx-background-color: white;" text="Female" />
+      <Button fx:id="SignUp" layoutX="293.0" layoutY="344.0" mnemonicParsing="false" onAction="#SignUpClick" style="-fx-border-style: solid;" text="SignUp" />
+      <Button fx:id="Login" layoutX="467.0" layoutY="344.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" style="-fx-border-style: solid;" text="Login" onAction="#gotoLogin"/>
+      <Label fx:id="Gender" layoutX="184.0" layoutY="294.0" prefHeight="17.0" prefWidth="98.0" style="-fx-background-color: white; -fx-border-style: solid;" text="Pick your gender" />
+   </children>
+</AnchorPane>
